@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "2043f5c1-55e3-4c05-8d21-1dafb8d812ff",
+    "name": "Billionaire Club",
+    "description": "Postman endpoint collection for billionaire club",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Billionaires",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/BillionaireApp/api/billionaires",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "BillionaireApp",
+            "api",
+            "billionaires"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Single Billionaire",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/BillionaireApp/api/billionaire/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "BillionaireApp",
+            "api",
+            "billionaire",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add New Billionaire",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\":\"fn\",\r\n    \"lastName\":\"ln\",\r\n    \"company\": \"cmp\",\r\n    \"wealth\":\"2B\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/BillionaireApp/api/billionaire",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "BillionaireApp",
+            "api",
+            "billionaire"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Modify Existing Billionaire",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Billionaire",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/BillionaireApp/api/billionaire/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "BillionaireApp",
+            "api",
+            "billionaire",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
