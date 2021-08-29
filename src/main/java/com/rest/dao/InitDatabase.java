@@ -18,7 +18,7 @@ public class InitDatabase implements InitializingBean {
         Connection connection = dataSource.getConnection();
         Statement statement = connection.createStatement();
 
-        statement.executeUpdate("DROP TABLE billionaires");
+        statement.executeUpdate("DROP TABLE IF EXISTS billionaires");
         statement.executeUpdate("CREATE TABLE billionaires (\n" +
                 "  id INT AUTO_INCREMENT  PRIMARY KEY,\n" +
                 "  first_name VARCHAR(250) NOT NULL,\n" +
